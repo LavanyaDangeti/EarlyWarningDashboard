@@ -1,0 +1,99 @@
+<mvc:View controllerName="com.ltim.earlywarn.controller.Dashboardview"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" height="100%"
+    xmlns:mc="sap.ui.comp.smartmicrochart">
+    <f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="false" showFooter="true">
+        <f:title>
+            <f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
+                <f:heading>
+                    <Title id="_IDGenTitle1" text="Dashboard"/>
+                </f:heading>
+                </f:DynamicPageTitle>
+        </f:title>
+        <f:content>
+            <VBox id="_IDGenVBox1" alignItems="Start" justifyContent="Start">
+                <items>
+                    <form:SimpleForm id="_IDGenSimpleForm1" editable="true" layout="ColumnLayout" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false" >
+                        <form:content>
+                            <Label id="_IDGenLabel1" text="Work Order" >
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData1" cellsSmall="6" cellsLarge="5"/>
+                                </layoutData>
+                            </Label>
+                            <Select id="selWO" required="true" enabled="true"
+                                items="">
+                                <core:ListItem id="_IDGenListItem1" />
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData2" cellsSmall="6" cellsLarge="5"/>
+                                </layoutData>
+                            </Select>
+                            <Label id="_IDGenLabel2" text="{i18n>fromDtLbl}" >
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData3" cellsSmall="6"/>
+                                </layoutData>
+                            </Label>
+                            <DatePicker id="fromDtDP" required="true"></DatePicker>
+ 
+ 
+                            <Label id="_IDGenLabel3" text="Material">
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData4" cellsSmall="6"/>
+                                </layoutData>
+                            </Label>
+                            <Select id="selMat" required="true" enabled="true"
+                                items="">
+                                <core:ListItem id="_IDGenListItem2" />
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData5" cellsSmall="6" cellsLarge="5"/>
+                                </layoutData>
+                            </Select>
+                            <Label id="_IDGenLabel4" text="{i18n>toDtLbl}" >
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData6" cellsSmall="6"/>
+                                </layoutData>
+                            </Label>
+                            <DatePicker id="_IDGenDatePicker1" required="true"></DatePicker>
+                           
+                           
+                            <Label id="_IDGenLabel5" text="{i18n>plnGrpLbl}" >
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData7" cellsSmall="6"/>
+                                </layoutData>
+                            </Label>
+                            <Select id="selPlanGrp"  enabled="true"  items="">
+                                <core:ListItem id="_IDGenListItem3" />
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData8" cellsSmall="6" cellsLarge="5"/>
+                                </layoutData>
+                            </Select>
+                            <Label id="_IDGenLabel6" text="{i18n>chrtGrpLbl}">
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData9" cellsSmall="6"/>
+                                </layoutData>
+                            </Label>
+                            <Select id="selchartGrp"  enabled="true"
+                                items="">
+                                <core:ListItem id="_IDGenListItem4" key="" text=""/>
+                                <layoutData>
+                                    <form:ColumnElementData id="_IDGenColumnElementData10" cellsSmall="6" cellsLarge="5"/>
+                                </layoutData>
+                            </Select>
+                           
+                        </form:content>
+                    </form:SimpleForm>
+                    <FlexBox id="_IDGenFlexBox1" width="1200px" alignItems="Center"
+                justifyContent="Center"><Button id="btnGo" text="Submit" press="submit"/>
+                <ToolbarSpacer id="_IDGenToolbarSpacer1" width="10px"/>
+                <Button id="_IDGenButton1" text="Reset" press="onCloseCreatePress"/></FlexBox>
+                <form:SimpleForm id="_IDGenSimpleForm2" editable="true" layout="ResponsiveGridLayout" columnsL="1" columnsM="1" width="76rem">
+                    <form:content>
+                   
+                        </form:content>
+                    </form:SimpleForm>
+                   
+                </items>
+            </VBox>
+        </f:content>
+       
+    </f:DynamicPage>
+</mvc:View>

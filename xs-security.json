@@ -1,0 +1,28 @@
+{
+  "xsappname": "MaintenanceOrder",
+  "tenant-mode": "dedicated",
+  "description": "Maintenance Order Early Warning",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.User",
+      "description": "Hack to Build Service"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "MaintenanceOrder-CAPM-Role",
+      "description": "Hack to Build Role Template",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+      "https://*.hana.ondemand.com/**"
+    ]
+  }
+}
+
+
